@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color: brown;
+        }
+        a:active
+        {
+            color: aqua;
+        }
+        a:hover
+        {
+            font-size: 20px;
+            color: chartreuse;
+        }
+        div{
+            width: 300px;
+            height: 200px;
+            
+           
+        }
+        div::first-letter{
+            font-size:xx-large;
+
+        }
+        div::first-line{
+            color:aqua ;
+        }
+        div::selection{
+            color:yellow
+        }
+        p::after{
+            content: "after para";
+            color: blue;
+        }
+        p::before{
+            content: "before para";
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">click here</a>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eaque saepe excepturi voluptatum, 
+        blanditiis quas provident! Vero recusandae  voluptas vel aspernatur deserunt doloribus, cumque optio 
+        quas explicabo, ratione beatae quae!</div>
+        <p>it is para</p>
+</body>
+</html>

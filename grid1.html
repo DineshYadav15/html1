@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridoperation</title>
+    <style>
+        .maindiv{
+            width: auto;
+            height: auto;
+           
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: 50px 150px 250px;
+            column-gap: 15px;
+            row-gap: 15px;
+        }
+        .inner{
+            height: auto;
+            width: auto;
+            background-color: orange;
+
+        }
+        .header,.footer{
+            grid-column: 1/-1;
+        }
+        .sidebar{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+        }
+        .maincont{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="inner header">Header</div>
+        <div class="inner">Small box</div>
+        <div class="inner">small box</div>
+        <div class="inner">Small box</div>
+        <div class="inner sidebar">Sidebar</div>
+        <div class="inner maincont">Main content</div>
+        <div class="inner footer">footer</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .main{
+            height: auto;
+            width: auto;
+            background-color:brown;
+            display: grid;
+           /* grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 100px 200px 200px;*/
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            row-gap: 15px;
+            column-gap: 20px;
+        }
+        .dkd
+        {
+            height: 100px;
+            width: 200px;
+            background-color: aqua;
+        }
+        .dkd1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="dkd 1">1</div>
+        <div class="dkd">2</div>
+        <div class="dkd">3</div>
+        <div class="dkd">4</div>
+        <div class="dkd">5</div>
+        <div class="dkd">6</div>
+        <div class="dkd">7</div>
+        <div class="dkd">8</div>
+        <div class="dkd">9</div>
+        <div class="dkd">10</div>
+    </div>
+</body>
+</html>

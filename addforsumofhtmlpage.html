@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+            var firstvalues=parseInt(document.getElementById('firstvalues').value);
+        
+            var secondvalues=parseInt(document.getElementById('secondvalues').value);
+            
+           document.getElementById('result').value=firstvalues+secondvalues;
+          
+        }
+      /*  function clearAll()
+        {
+            document.getElementById('firstvalues').value=' ';
+            document.getElementById('secondvalues').value=' ';
+            document.getElementById('result').value=' ';
+        }*/
+        function clearAll() //both used 
+        {
+            firstvalues.value=' ';
+            secondvalues.value=' ';
+            result.value=' ';
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <label>enter first values:</label>
+        <input type="text" id='firstvalues'>
+        <br><br>
+        <label>enter second values:</label>
+        <input type="text" id='secondvalues'>
+        <br><br>
+        <label>sum:</label>
+        <input type="text" id='result' readonly>
+        <br><br>
+        <button onclick="add()">Add</button>
+        <button onclick="clearAll()">clear</button>
+    </div>
+</body>
+</html>

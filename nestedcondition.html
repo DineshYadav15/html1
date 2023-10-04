@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display()
+        {
+            let phone=txtnumber.value
+        
+                 if(phone=='')
+               {
+                msg.innerHTML='Please enter phone number';
+               }
+               else
+               {
+                    if(isNaN(phone))
+                    {
+                         msg.innerHTML='invalid phone number';
+                    }
+                    else{
+                         msg.innerHTML='valid phone number';
+                    }
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>Enter the phone number</label>
+    <input type="text" id="txtnumber">
+    <br>
+    <br>
+    <span id="msg"></span>
+    <button onclick="display()">check</button>
+</body>
+</html>

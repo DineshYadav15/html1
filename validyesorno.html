@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display()
+        {
+            console.log('focus event get called');
+        }
+        function checkAge()
+        {
+           var age=parseInt(age.value);
+           if(age>=18)
+           {
+            msg.style.color='green';
+            msg.inerHTML='valid age'
+           }
+           else{
+             msg.style.color='red';
+            msg.inerHTML='Invalid age'
+           }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onfocus="display()">
+    <br><br>
+    <input type="text" onblur="checkAge()" id="age">(age should be greater then 18);
+    <p id="msg"></p>
+</body>
+</html>

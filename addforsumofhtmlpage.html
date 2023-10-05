@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aithmetic operation</title>
     <script>
         function add()
         {
@@ -12,6 +12,9 @@
             var secondvalues=parseInt(document.getElementById('secondvalues').value);
             
            document.getElementById('result').value=firstvalues+secondvalues;
+            document.getElementById('sub').value=firstvalues-secondvalues;
+             document.getElementById('multi').value=firstvalues*secondvalues;
+              document.getElementById('div').value=firstvalues/secondvalues;
           
         }
       /*  function clearAll()
@@ -38,7 +41,20 @@
         <input type="text" id='secondvalues'>
         <br><br>
         <label>sum:</label>
-        <input type="text" id='result' readonly>
+        <input type="text" id='result' readonly><br>
+        <br>
+         <label>sub:</label>
+        <input type="text" id='sub' readonly>
+        <br>
+        <br>
+
+         <label>milti:</label>
+        <input type="text" id='multi' readonly>
+        <br>
+        <br>
+         <label>divide:</label>
+        <input type="text" id='div' readonly>
+         
         <br><br>
         <button onclick="add()">Add</button>
         <button onclick="clearAll()">clear</button>

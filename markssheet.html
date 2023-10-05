@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divinfo{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+        </style>
+        <script>
+        function add()
+        {
+            var name=txtname.value;
+            var per=parseFloat(txtper.value);
+            divinfo.innerHTML+=name;
+                if(per>=75)
+                    divinfo.innerHTML+=' '+per+' Distinction</br>';
+                    else if(per>=60)
+                    divinfo.innerHTML+=' '+per+' first</br>';
+                      else if(per>=50)
+                    divinfo.innerHTML+=' '+per+' second</br>';
+                      else if(per>=40)
+                    divinfo.innerHTML+=' '+per+' third</br>';
+                      else if(per>=32)
+                    divinfo.innerHTML+=' '+per+' pass</br>';
+                    else{
+                        divinfo.innerHTML+=' '+per+' fail</br>';
+                    }
+        }
+        </script>
+    
+</head>
+<body>
+    Enrte the name:
+    <input type="text" id="txtname">
+    <br>
+    <br>
+    <br>
+    Enter the percentage:
+    <input type="text" id="txtper">
+    <br>
+    <br>
+   <button onclick="add()">add</button>
+   <br>
+   <br>
+   <div id="divinfo"></div>
+</body>
+</html>

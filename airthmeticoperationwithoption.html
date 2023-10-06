@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculate()
+        {
+           var num1=parseInt(firstvalues.value);
+           var num2=parseInt(secondvalues.value);
+           var ch=parseInt(mathoperation.value);
+           res.innerHTML=' ';
+           res.innerHTML= 'result :';
+           switch(ch)
+           {
+            case 1:
+                res.innerHTML += num1+num2;
+                break;
+            case 2:
+                res.innerHTML += num1-num2;
+                break;
+            case 3:
+                res.innerHTML += num1*num2;
+                break;
+            case 4:
+                res.innerHTML += num1/num2;
+                break;            
+           }
+        }
+       
+        function clearAll()
+        {
+            firstvalues.value=' ';
+            secondvalues.value=' ';
+            res.value=' ';
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="firstvalues" placeholder="enter first number">
+    <input type="text" id="secondvalues" placeholder="enter second number">
+    <br><br>
+    <select id="mathoperation" onchange="calculate()">
+        <option>---select---</option>
+        <option value="1">Add</option>
+        <option value="2">sub</option>
+        <option value="3">multi</option>
+        <option value="4">div</option>  
+     </select>
+     <span id="res"></span>
+     <button onclick="clearAll()">clear</button>
+</body>
+</html>

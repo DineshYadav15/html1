@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clicklength()
+        {
+        var obj=document.getElementById('textchar');
+        if(obj.value.length!=3)
+        {
+            msg.innerHTML='not a valid input';
+           obj.style.color='red';
+        }
+        else
+        {
+           msg.innerHTML='valid input';
+           obj.style.color='green';
+        }
+        }
+    </script>
+</head>
+<body>
+    enter the three cracters
+    <input type="text" onchange="clicklength()" id="textchar">
+    <span id="msg"></span>
+</body>
+</html>

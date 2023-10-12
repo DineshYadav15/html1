@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Uppercase Text Input</title>
+</head>
+<body>
+    <label for="textInput">Enter Text: </label>
+    <input type="text" id="textInput" oninput="convertToUppercase(this)">
+    
+    <script>
+        function convertToUppercase(inputField) {
+            inputField.value = inputField.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>
+
+
+
+

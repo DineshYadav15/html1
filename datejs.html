@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let d=new Date();
+        console.log(d);
+        let d1=new Date('october 13,2024');
+        console.log(d1);
+         d1=new Date(2013,2,12);
+        console.log(d1)
+        console.log('toUTCString='+d.toUTCString()); 
+        console.log('toDateString='+d.toDateString()); 
+        console.log('Date='+d.getDate());
+        //0 to 11 jan to dec
+        console.log('month='+d.getMonth());
+        console.log('year='+d.getFullYear()); 
+        console.log('hours='+d.getHours());
+        console.log('minutes='+d.getMinutes());
+        console.log('Seconds='+d.getSeconds());
+        console.log('miliseconds='+d.getMilliseconds());
+        console.log('time='+d.getTime());
+        console.log('day='+d.getDay());   
+//set date
+        console.log('setdate='+d.setDate(d.getDate()+5));
+        console.log(d);
+         console.log('setmonth='+d.setMonth(d.getMonth()+5));
+        console.log(d);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

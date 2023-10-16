@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function   validate()
+        {
+            var ph=document.getElementById('txtph');
+            if(ph.value=='')
+            {
+                msg.innerHTML='please enter phone number';
+                return false;
+            }
+            else
+            {
+           
+                if(!((/^[0-9]+$/).test(ph.value)))
+                {
+ 
+                    msg.innerHTML='Please enter Valid number';
+                    return false;
+                }
+                  else if(ph.value.length!=10)
+                {
+                    msg.innerHTML='Please enter 10 digits ph number';
+                    return false;
+                }
+            }
+            return true;
+        }
+             function validate1()
+        {
+        //a-b.c@gm.ail.com
+          var pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+           
+           
+            var email=document.getElementById('txtEmail');
+              if(email.value=='')
+            {
+                msg.innerHTML='Please enter email id';
+            }
+             else if(pattern.test(email.value))
+            {
+                msg.innerHTML='valid';
+            }
+             else
+            {
+                msg.innerHTML='Invalid';
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <form action="switchjs.html">
+        <input type="tel" id="txtph" name="return validate()">
+        
+        <input type="text" id="txtEmail"><br><br>
+        <button onclick=" validate1()" >Validate</button>
+        <p id="msg"></p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function  validate()
+        {
+            var ph=document.getElementById('txtph');
+            if(ph.value=='')
+            {
+                msg.innerHTML='please enter phone number';
+                return false;
+            }
+            else
+            {
+           
+                if(!((/^[0-9]+$/).test(ph.value)))
+                {
+ 
+                    msg.innerHTML='Please enter Valid number';
+                    return false;
+                }
+                  else if(ph.value.length!=10)
+                {
+                    msg.innerHTML='Please enter 10 digits ph number';
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+    </script>
+</head>
+<body>
+    <form action="switchjs.html">
+        <input type="tel" id="txtph">
+          <button onclick="return validate()" type="submit">Validate</button>
+        <p id="msg"></p>
+
+    </form>
+</body>
+</html>

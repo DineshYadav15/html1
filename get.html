@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                var t=$('p').text();
+                console.log(t);
+                console.log($('div').html());
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error ipsum. Deleniti amet dignissimos, beatae quidem pariatur excepturi. Sunt officia necessitatibus veritatis amet molestias suscipit exercitationem odit quis maxime dolor.</p>
+    <div><b>Hello</b><i>welcome</i></div>
+    <button>show text</button>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            width: 400px;
+            height: 400px;
+            background-color: brown;
+            margin: auto;
+        }
+    </style>
+     <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+    <script>
+          //Effects-SlideUp slideDown SlideToggle
+        $(document).ready(function(){
+           $('#btnSlideUp').click(function(){
+                $('div').slideUp(2000);
+           });
+           $('#btnSlideDown').click(function(){
+                $('div').slideDown(2000);
+           });
+           $('#btnSlideToggle').click(function(){
+                $('div').slideToggle(2000);
+           });
+        });
+    </script>
+</head>
+<body>
+   <button id="btnSlideUp">Slide Up</button>
+   <button id="btnSlideDown">Slide Down</button>
+   <button id="btnSlideToggle">Slide Toggle</button>
+   <div>
+ 
+   </div>
+</body>
+</html>
